@@ -1,3 +1,7 @@
+/*------------------------*/
+/* DESIGN - COLOR PALETTE */
+/*------------------------*/
+
 .color-palette {
   display: flex;
   justify-content: center;
@@ -14,13 +18,132 @@
 .color-2 {
   background-color: rgba(204, 204, 204, 1);
 }
-
 .color-3 {
-  background-color: rgba(255, 234, 234, 1);
+  background-color: rgba(255, 229, 229, 1);
 }
 .color-4 {
-  background-color: rgba(0, 120, 151, 1);
+  background-color: rgba(180, 237, 199, 1);
 }
 .color-5 {
   background-color: rgba(10, 64, 110, 1);
+}
+.color-6 {
+  background-color: rgba(255, 250, 165, 1);
+}
+/*---------*/
+/* GLOBAL */
+/*---------*/
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgba(242, 242, 242, 1);
+}
+/*---------*/
+/* LANDING */
+/*---------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: rgba(7, 51, 89, 1);
+}
+
+p {
+  color: rgb(32, 32, 32);
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/*--- HEADER ---*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 2%;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+
+/*--- MAIN ---*/
+.landing-main {
+  display: flex;
+}
+
+/*--- background pattern ---*/
+.landing-pattern {
+  margin-top: 1%;
+  width: 40%;
+}
+
+.fa-plus {
+  position: relative;
+  font-size: 2em;
+}
+
+.p1 {
+  top: 5%;
+  color: rgba(204, 204, 204, 1);
+}
+.p2 {
+  top: 10%;
+  color: rgba(255, 234, 234, 1);
+}
+
+.p3 {
+  top: 15%;
+  /* left: 5%; */
+  color: rgba(180, 237, 199, 1);
+}
+
+.p4 {
+  top: 30%;
+  /* right: 20%; */
+  color: rgba(255, 250, 165, 1);
+}
+
+.p5 {
+  top: 70%;
+  color: rgba(204, 204, 204, 1);
+}
+
+.p6 {
+  top: 25%;
+  /* right: 10%; */
+  color: rgba(255, 234, 234, 1);
+}
+
+.p7 {
+  top: 40%;
+  /* right: 80%; */
+  color: rgba(180, 237, 199, 1);
+}
+
+.p8 {
+  top: 80%;
+  color: rgba(255, 250, 165, 1);
+}
+
+.p9 {
+  top: 50%;
+  /* right: 90%; */
+  color: rgba(204, 204, 204, 1);
+}
+
+.p10 {
+  /* right: 90%; */
+  color: rgba(255, 234, 234, 1);
+}
+
+/*--- bio ---*/
+.short-bio {
+  margin: 3%;
+  width: 57%;
 }
