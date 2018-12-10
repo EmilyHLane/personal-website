@@ -1,0 +1,26 @@
+.color-palette {
+  display: flex;
+  justify-content: center;
+}
+
+.color-palette div {
+  width: 100px;
+  height: 500px;
+}
+
+.color-1 {
+  background-color: rgba(242, 242, 242, 1);
+}
+.color-2 {
+  background-color: rgba(204, 204, 204, 1);
+}
+
+.color-3 {
+  background-color: rgba(255, 234, 234, 1);
+}
+.color-4 {
+  background-color: rgba(0, 120, 151, 1);
+}
+.color-5 {
+  background-color: rgba(10, 64, 110, 1);
+}
