@@ -82,7 +82,8 @@ p,
 li {
   color: rgb(39, 39, 39);
   line-height: 1.6;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-family: "Glegoo", serif;
 }
 
 /*--- HEADER ---*/
