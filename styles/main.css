@@ -95,6 +95,7 @@ header {
   height: 15vh;
   padding: 2%;
   border-bottom: 5px solid rgba(204, 204, 204, 1);
+  margin-top: 1%;
 }
 
 /*--- MAIN ---*/
@@ -174,6 +175,29 @@ header {
 .list-col-1,
 .list-col-2 {
   width: 50%;
+}
+
+/*---------------*/
+/*---PORTFOLIO---*/
+/*---------------*/
+.portfolio-page h2,
+.about-page h2,
+.contact-page h2 {
+  background-color: rgba(242, 242, 242, 1);
+  position: relative;
+  top: -28px;
+  display: inline-block;
+  left: 44%;
+  padding: 5px;
+  font-size: 2em;
+}
+
+.feat-proj-img {
+  width: 500px;
+}
+
+.heroku-logo {
+  width: 20px;
 }
 
 /*---------------*/
