@@ -36,6 +36,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -180,6 +181,8 @@ header {
 /*---------------*/
 /*---PORTFOLIO---*/
 /*---------------*/
+
+/*---text and image sizes---*/
 .portfolio-page h2,
 .about-page h2,
 .contact-page h2 {
@@ -193,13 +196,37 @@ header {
 }
 
 .feat-proj-img {
-  width: 500px;
+  width: 100%;
+}
+
+.icf-img {
+  width: 100%;
 }
 
 .heroku-logo {
   width: 20px;
 }
 
+/*---layout---*/
+
+.portfolio-page {
+  margin: 0 5%;
+}
+
+.p0-2 {
+  display: flex;
+}
+
+.p1-2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.featured-project {
+  width: 60%;
+  margin-right: 5%;
+}
 /*---------------*/
 /* SMALL SCREENS */
 /*---------------*/
