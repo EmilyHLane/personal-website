@@ -221,6 +221,10 @@ header {
   margin: 0 5%;
 }
 
+.portfolio-projects-container {
+  display: flex;
+}
+
 .proj-img {
   margin-bottom: 5px;
 }
@@ -235,7 +239,15 @@ header {
   line-height: 0;
 }
 
-.p0-2 {
+.col-1 {
+  width: 60%;
+}
+
+.col-2 {
+  width: 40%;
+}
+
+/* .p0-2 {
   display: flex;
 }
 
@@ -243,10 +255,9 @@ header {
   display: flex;
   flex-direction: column;
   width: 40%;
-}
+} */
 
 .featured-project {
-  width: 60%;
   margin-right: 5%;
 }
 
