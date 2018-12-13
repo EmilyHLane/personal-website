@@ -203,14 +203,35 @@ header {
   width: 100%;
 }
 
+.fa-github,
+.fa-external-link-alt {
+  font-size: 1.5em;
+  padding: 2px;
+  margin-right: 1%;
+}
+
 .heroku-logo {
-  width: 20px;
+  width: 25px;
 }
 
 /*---layout---*/
 
 .portfolio-page {
   margin: 0 5%;
+}
+
+.proj-img {
+  margin-bottom: 5px;
+}
+
+.portfolio-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.portfolio-page a {
+  line-height: 0;
 }
 
 .p0-2 {
