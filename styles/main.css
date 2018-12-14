@@ -68,6 +68,11 @@ h3 {
   margin-top: 15px;
 }
 
+h4 {
+  font-weight: normal;
+  margin-top: 5%;
+}
+
 nav a {
   margin: 10px;
   font-size: 1.5em;
@@ -180,7 +185,7 @@ header {
 }
 
 /*---------------*/
-/*---PORTFOLIO---*/
+/*   PORTFOLIO   */
 /*---------------*/
 
 /*---text and image sizes---*/
@@ -248,13 +253,34 @@ header {
   width: 40%;
 }
 
-.featured-project {
-  margin-right: 5%;
+.featured-project,
+.project-3 {
+  margin-right: 10%;
 }
 
-/*---------------*/
-/*---Contact---*/
-/*---------------*/
+/*-----------*/
+/*   About   */
+/*-----------*/
+
+.about-sections {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.about-sub-section {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.work-exp,
+.education {
+  margin-right: 1%;
+}
+
+/*-------------*/
+/*   Contact   */
+/*-------------*/
 
 .contact-page {
   margin: 0 5%;
