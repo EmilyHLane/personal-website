@@ -73,14 +73,17 @@ h4 {
   margin-top: 5%;
 }
 
-nav a {
-  margin: 10px;
-  font-size: 1.5em;
+header a {
   text-decoration: none;
 }
 
+nav a {
+  margin: 10px;
+  font-size: 1.5em;
+  transition: font-weight 0.2s ease;
+}
+
 nav a:hover {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -240,7 +243,7 @@ header {
 }
 
 .project-remove-desc {
-  display: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .project-description {
@@ -250,13 +253,19 @@ header {
   text-align: center;
   padding: 30% 3% 0;
   font-size: 1.6em;
+  transition: color 0.3s ease, background-color 0.5s ease;
 }
 
-.icf-img {
-  width: 100%;
+.project-description:hover {
+  background-color: rgba(7, 51, 89, 0.9);
+  color: rgba(242, 242, 242, 1);
+  height: 100%;
+  text-align: center;
+  padding: 30% 3% 0;
+  font-size: 1.6em;
 }
 
-.fa-github,
+. .fa-github,
 .fa-external-link-alt {
   font-size: 1.5em;
   padding: 2px;

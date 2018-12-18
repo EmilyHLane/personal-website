@@ -1,12 +1,10 @@
-// alert("javascript ready");
-
-//show project description on hover
+//show project description on hover and focus
 const image = document.querySelectorAll(".proj-img");
 const imageLink = document.querySelectorAll(".image-link");
 
 for (let i = 0; i < image.length; i++) {
-  image[i].addEventListener("mouseenter", addRemoveDescription);
-  image[i].addEventListener("mouseleave", addRemoveDescription);
+  image[i].addEventListener("mouseenter", addDescription);
+  image[i].addEventListener("mouseleave", removeDescription);
 }
 
 for (let i = 0; i < imageLink.length; i++) {
@@ -14,9 +12,17 @@ for (let i = 0; i < imageLink.length; i++) {
   imageLink[i].addEventListener("focusout", focusAddRemoveDescription);
 }
 
-function addRemoveDescription() {
-  console.log("mouse event");
+function addDescription() {
   const description = this.children[0];
+  const visibleDescription = document.querySelector(".project-description");
+  description.classList.toggle("project-description");
+  description.classList.toggle("project-remove-desc");
+  // visibleDescription.style.opacity = "1";
+}
+
+function removeDescription() {
+  const description = this.children[0];
+  const noDescription = document.querySelector(".project-remove-desc");
   description.classList.toggle("project-description");
   description.classList.toggle("project-remove-desc");
 }
