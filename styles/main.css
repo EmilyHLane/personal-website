@@ -79,7 +79,7 @@ nav a {
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
@@ -201,8 +201,51 @@ header {
   font-size: 2em;
 }
 
-.feat-proj-img {
+.col-1 a,
+.col-2 a {
+  text-decoration: none;
+}
+
+.featured-proj-img {
+  background: url("../images/motivatr.png");
+}
+
+.proj-2-img {
+  background: url("../images/meenstream.png");
+}
+
+.proj-3-img {
+  background: url("../images/rainbow.png");
+}
+
+.proj-4-img {
+  background: url("../images/comic.png");
+}
+
+.proj-5-img {
+  background: url("https://imgplaceholder.com/420x320?text=new+project");
+  background-position: center;
+}
+
+.proj-6-img {
+  background: url("../images/icecreamfinder.png");
+  background-position: center;
+}
+
+.proj-img {
+  height: 400px;
+  background-size: cover;
+  margin-bottom: 5px;
   width: 100%;
+}
+
+.project-description {
+  background-color: rgba(7, 51, 89, 0.9);
+  color: rgba(242, 242, 242, 1);
+  height: 100%;
+  text-align: center;
+  padding: 30% 2% 0;
+  font-size: 1.6em;
 }
 
 .icf-img {
@@ -230,11 +273,6 @@ header {
   display: flex;
 }
 
-.proj-img {
-  margin-bottom: 5px;
-  width: 100%;
-}
-
 .portfolio-icons {
   display: flex;
   align-items: center;
@@ -246,16 +284,13 @@ header {
 }
 
 .col-1 {
-  width: 60%;
+  width: 50%;
+  margin-right: 2.5%;
 }
 
 .col-2 {
-  width: 40%;
-}
-
-.featured-project,
-.project-3 {
-  margin-right: 10%;
+  width: 50%;
+  margin-left: 2.5%;
 }
 
 /*-----------*/
