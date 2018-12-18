@@ -14,15 +14,12 @@ for (let i = 0; i < imageLink.length; i++) {
 
 function addDescription() {
   const description = this.children[0];
-  const visibleDescription = document.querySelector(".project-description");
   description.classList.toggle("project-description");
   description.classList.toggle("project-remove-desc");
-  // visibleDescription.style.opacity = "1";
 }
 
 function removeDescription() {
   const description = this.children[0];
-  const noDescription = document.querySelector(".project-remove-desc");
   description.classList.toggle("project-description");
   description.classList.toggle("project-remove-desc");
 }
