@@ -239,12 +239,16 @@ header {
   width: 100%;
 }
 
+.project-remove-desc {
+  display: none;
+}
+
 .project-description {
   background-color: rgba(7, 51, 89, 0.9);
   color: rgba(242, 242, 242, 1);
   height: 100%;
   text-align: center;
-  padding: 30% 2% 0;
+  padding: 30% 3% 0;
   font-size: 1.6em;
 }
 
