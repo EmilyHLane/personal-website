@@ -390,7 +390,7 @@ textarea {
 
 @media only screen and (max-width: 560px) {
   header {
-    height: 25vh;
+    height: 35vh;
     justify-content: center;
   }
 
@@ -407,6 +407,15 @@ textarea {
     margin: 5px;
     font-size: 1.4em;
     text-decoration: none;
+  }
+
+  .portfolio-page h2,
+  .contact-page h2 {
+    left: 36%;
+  }
+
+  .about-page h2 {
+    left: 39%;
   }
 
   /*--- SM - LANDING ---*/
