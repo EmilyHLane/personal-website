@@ -228,20 +228,20 @@ header {
   background: url("../images/meenstream.png");
 }
 
-.proj-3-img {
+.proj-4-img {
   background: url("../images/rainbow.png");
 }
 
-.proj-4-img {
+.proj-3-img {
   background: url("../images/comic.png");
 }
 
-.proj-5-img {
+.proj-6-img {
   background: url("https://imgplaceholder.com/420x320?text=new+project");
   background-position: center;
 }
 
-.proj-6-img {
+.proj-5-img {
   background: url("../images/icecreamfinder.png");
   background-position: center;
 }
@@ -276,7 +276,7 @@ header {
   font-size: 1.6em;
 }
 
-. .fa-github,
+.fa-github,
 .fa-external-link-alt {
   font-size: 1.5em;
   padding: 2px;
@@ -294,6 +294,13 @@ header {
 }
 
 .portfolio-projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-1,
+.row-2,
+.row-3 {
   display: flex;
 }
 
@@ -454,4 +461,6 @@ textarea {
     width: 1em;
     margin-left: -1em;
   }
+
+  /*--- SM - PORTFOLIO ---*/
 }
