@@ -43,6 +43,17 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
+.skip-to-main {
+  position: fixed;
+  top: -20px;
+}
+
+.skip-to-main:focus {
+  position: fixed;
+  top: 2%;
+  left: 20%;
+}
+
 /*---------*/
 /* LANDING */
 /*---------*/
