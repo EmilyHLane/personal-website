@@ -395,7 +395,7 @@ textarea {
 /* SMALL SCREENS */
 /*---------------*/
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
   header {
     height: 35vh;
     justify-content: center;
