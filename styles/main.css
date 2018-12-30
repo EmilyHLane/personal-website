@@ -327,21 +327,22 @@ header {
 /*-----------*/
 /*   About   */
 /*-----------*/
-
-.about-sections {
-  display: flex;
-  justify-content: space-between;
+.about-page {
   margin: 0 5%;
 }
 
-.about-sub-section {
+.about-section {
   display: flex;
-  flex-direction: column;
-  width: 33%;
 }
-.work-exp,
-.education {
-  margin-right: 1%;
+
+.about-image {
+  height: 400px;
+  border-radius: 100%;
+  border: 1px solid rgba(7, 51, 89, 1);
+}
+
+.about-description {
+  margin-left: 7%;
 }
 
 /*-------------*/
