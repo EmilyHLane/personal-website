@@ -49,48 +49,51 @@ if (aboutImageBack) {
   aboutImageBack.addEventListener("mouseleave", swapPhoto);
 }
 
-// contact form
+//contact form
+const form = document.getElementById("form");
 
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyBsp08O8qjijHX-rcjI34db49qBGqQRtsU",
-  authDomain: "contact-eb60c.firebaseapp.com",
-  databaseURL: "https://contact-eb60c.firebaseio.com",
-  projectId: "contact-eb60c",
-  storageBucket: "contact-eb60c.appspot.com",
-  messagingSenderId: "479107162103"
-};
-firebase.initializeApp(config);
+if (form) {
+  form.addEventListener("submit", submitForm);
 
-// reference messages collection
-const messagesRef = firebase.database().ref("messages");
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyBsp08O8qjijHX-rcjI34db49qBGqQRtsU",
+    authDomain: "contact-eb60c.firebaseapp.com",
+    databaseURL: "https://contact-eb60c.firebaseio.com",
+    projectId: "contact-eb60c",
+    storageBucket: "contact-eb60c.appspot.com",
+    messagingSenderId: "479107162103"
+  };
 
-//contact form values
-document.getElementById("form").addEventListener("submit", submitForm);
+  firebase.initializeApp(config);
 
-// submit form
-function submitForm(e) {
-  e.preventDefault();
-  // get values
-  const name = getFormValues("name");
-  const email = getFormValues("email");
-  const message = getFormValues("message");
+  // reference messages collection
+  const messagesRef = firebase.database().ref("messages");
 
-  // save message
-  saveMessage(name, email, message);
-}
+  // submit form
+  function submitForm(e) {
+    e.preventDefault();
+    // get values
+    const name = getFormValues("name");
+    const email = getFormValues("email");
+    const message = getFormValues("message");
 
-// get form values
-function getFormValues(id) {
-  return document.getElementById(id).value;
-}
+    // save message
+    saveMessage(name, email, message);
+  }
 
-// save message to firebase
-function saveMessage(name, email, message) {
-  const newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    email: email,
-    message: message
-  });
+  // get form values
+  function getFormValues(id) {
+    return document.getElementById(id).value;
+  }
+
+  // save message to firebase
+  function saveMessage(name, email, message) {
+    const newMessageRef = messagesRef.push();
+    newMessageRef.set({
+      name: name,
+      email: email,
+      message: message
+    });
+  }
 }
