@@ -41,7 +41,56 @@ function swapPhoto() {
   }, 250);
 }
 
-aboutImage.addEventListener("mouseenter", swapPhoto);
-aboutImageBack.addEventListener("mouseleave", swapPhoto);
+if (aboutImage) {
+  aboutImage.addEventListener("mouseenter", swapPhoto);
+}
+
+if (aboutImageBack) {
+  aboutImageBack.addEventListener("mouseleave", swapPhoto);
+}
 
 // contact form
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBsp08O8qjijHX-rcjI34db49qBGqQRtsU",
+  authDomain: "contact-eb60c.firebaseapp.com",
+  databaseURL: "https://contact-eb60c.firebaseio.com",
+  projectId: "contact-eb60c",
+  storageBucket: "contact-eb60c.appspot.com",
+  messagingSenderId: "479107162103"
+};
+firebase.initializeApp(config);
+
+// reference messages collection
+const messagesRef = firebase.database().ref("messages");
+
+//contact form values
+document.getElementById("form").addEventListener("submit", submitForm);
+
+// submit form
+function submitForm(e) {
+  e.preventDefault();
+  // get values
+  const name = getFormValues("name");
+  const email = getFormValues("email");
+  const message = getFormValues("message");
+
+  // save message
+  saveMessage(name, email, message);
+}
+
+// get form values
+function getFormValues(id) {
+  return document.getElementById(id).value;
+}
+
+// save message to firebase
+function saveMessage(name, email, message) {
+  const newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}

@@ -47,9 +47,10 @@
           </section>
         </section>
         <section class="contact-form-container">
-          <form action="" method="" class="contact-form">
+          <form id="form" action="" method="" class="contact-form">
             <h3>Message me</h3>
             <input
+              id="name"
               class="contact-form-field"
               type="text"
               name="name"
@@ -57,6 +58,7 @@
               required
             />
             <input
+              id="email"
               class="contact-form-field"
               type="email"
               name="emailAddress"
@@ -64,6 +66,7 @@
               required
             />
             <textarea
+              id="message"
               class="contact-form-field"
               name="message"
               placeholder="message"
@@ -76,6 +79,9 @@
         </section>
       </div>
     </main>
+
+    <!-- link firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

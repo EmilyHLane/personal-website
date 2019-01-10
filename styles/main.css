@@ -172,6 +172,7 @@ header {
   color: rgba(180, 237, 199, 1);
   top: 60%;
 }
+
 .p13,
 .p14 {
   color: rgba(255, 229, 229, 1);
@@ -388,6 +389,7 @@ header {
 .contact-page {
   margin: 0 5%;
 }
+
 .contact-page-container {
   display: flex;
 }
