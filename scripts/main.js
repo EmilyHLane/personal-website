@@ -1,4 +1,4 @@
-//show project description on hover and focus
+// show project description on hover and focus
 const image = document.querySelectorAll(".proj-img");
 const imageLink = document.querySelectorAll(".image-link");
 
