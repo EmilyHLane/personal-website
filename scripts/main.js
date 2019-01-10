@@ -2,16 +2,6 @@
 const image = document.querySelectorAll(".proj-img");
 const imageLink = document.querySelectorAll(".image-link");
 
-for (let i = 0; i < image.length; i++) {
-  image[i].addEventListener("mouseenter", addDescription);
-  image[i].addEventListener("mouseleave", removeDescription);
-}
-
-for (let i = 0; i < imageLink.length; i++) {
-  imageLink[i].addEventListener("focusin", focusAddRemoveDescription);
-  imageLink[i].addEventListener("focusout", focusAddRemoveDescription);
-}
-
 function addDescription() {
   const description = this.children[0];
   description.classList.toggle("project-description");
@@ -29,3 +19,29 @@ function focusAddRemoveDescription() {
   focusDescription.classList.toggle("project-description");
   focusDescription.classList.toggle("project-remove-desc");
 }
+
+for (let i = 0; i < image.length; i++) {
+  image[i].addEventListener("mouseenter", addDescription);
+  image[i].addEventListener("mouseleave", removeDescription);
+}
+
+for (let i = 0; i < imageLink.length; i++) {
+  imageLink[i].addEventListener("focusin", focusAddRemoveDescription);
+  imageLink[i].addEventListener("focusout", focusAddRemoveDescription);
+}
+
+// About page image swap
+const aboutImage = document.querySelector(".about-image");
+const aboutImageBack = document.querySelector(".about-image-back");
+
+function swapPhoto() {
+  setTimeout(function swap() {
+    aboutImage.classList.toggle("hide-image");
+    aboutImageBack.classList.toggle("hide-image");
+  }, 250);
+}
+
+aboutImage.addEventListener("mouseenter", swapPhoto);
+aboutImageBack.addEventListener("mouseleave", swapPhoto);
+
+// contact form

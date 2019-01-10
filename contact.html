@@ -47,31 +47,36 @@
           </section>
         </section>
         <section class="contact-form-container">
-          <!--
-            <form class="contact-form">
-              <h3>Message me</h3>
-              <input
-                class="contact-form-field"
-                type="text"
-                name="name"
-                placeholder="name"
-              />
-              <input
-                class="contact-form-field"
-                type="email"
-                name="email"
-                placeholder="email"
-              />
-              <textarea
-                class="contact-form-field"
-                name="message"
-                placeholder="message"
-              ></textarea>
-              <button class="contact-form-field submit-button" type="submit">
-                Send
-              </button>
-            </form>
-          -->
+          <form
+            action="https://ehlane.prod.with-datafire.io/contact"
+            method="POST"
+            class="contact-form"
+          >
+            <h3>Message me</h3>
+            <input
+              class="contact-form-field"
+              type="text"
+              name="name"
+              placeholder="your name"
+              required
+            />
+            <input
+              class="contact-form-field"
+              type="email"
+              name="emailAddress"
+              placeholder="your email"
+              required
+            />
+            <textarea
+              class="contact-form-field"
+              name="message"
+              placeholder="message"
+              required
+            ></textarea>
+            <button class="contact-form-field submit-button" type="submit">
+              Send
+            </button>
+          </form>
         </section>
       </div>
     </main>
