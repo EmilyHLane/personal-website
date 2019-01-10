@@ -36,8 +36,8 @@ const aboutImageBack = document.querySelector(".about-image-back");
 
 function swapPhoto() {
   setTimeout(function swap() {
-    aboutImage.classList.toggle("hide-image");
-    aboutImageBack.classList.toggle("hide-image");
+    aboutImage.classList.toggle("hide");
+    aboutImageBack.classList.toggle("hide");
   }, 250);
 }
 
@@ -77,9 +77,19 @@ if (form) {
     const name = getFormValues("name");
     const email = getFormValues("email");
     const message = getFormValues("message");
+    const successMessage = document.querySelector(".contact-success-message");
+    const formFields = document.querySelectorAll(".contact-form-field");
 
     // save message
     saveMessage(name, email, message);
+
+    // hide contact-form-fields
+    for (let i = 0; i < formFields.length; i++) {
+      formFields[i].classList.toggle("hide");
+    }
+
+    // show success message
+    successMessage.classList.toggle("hide");
   }
 
   // get form values

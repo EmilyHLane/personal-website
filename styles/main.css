@@ -374,7 +374,7 @@ header {
   opacity: 1;
 }
 
-.hide-image {
+.hide {
   display: none;
 }
 
@@ -425,6 +425,24 @@ textarea {
   color: rgba(242, 242, 242, 1);
 }
 
+.contact-success-message {
+  margin: 10px 0;
+  padding: 130px;
+  text-align: center;
+  background-color: rgba(7, 51, 89, 1);
+  border-radius: 5px;
+}
+
+.contact-success-message i {
+  font-size: 6em;
+  color: rgba(180, 237, 199, 1);
+}
+
+.contact-success-message p {
+  font-size: 1.6em;
+  color: rgba(180, 237, 199, 1);
+  margin-top: 5px;
+}
 /*---------------*/
 /* SMALL SCREENS */
 /*---------------*/
