@@ -22,6 +22,10 @@ body {
   left: 20%;
 }
 
+.mt-35 {
+  margin-top: 35px;
+}
+
 /*---------*/
 /* LANDING */
 /*---------*/
@@ -373,6 +377,9 @@ header {
 .contact-form {
   display: flex;
   flex-direction: column;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .contact-form-field {
@@ -540,5 +547,11 @@ textarea {
   .contact-form-container {
     width: 100%;
     margin-top: 20px;
+  }
+
+  .contact-form {
+    border-top: 1px solid lightgrey;
+    margin-top: 20px;
+    padding-top: 20px;
   }
 }
